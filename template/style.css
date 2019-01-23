@@ -7,15 +7,15 @@ body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
-
 }
 
 .img-thumbnail {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 0 0;
-  border: 2px solid #f6861f;
+  /* object-position: 0 0; */
+  padding: 0;
+
 }
 
 .myheader {
@@ -73,10 +73,10 @@ body {
 
 .whiteblock {
   text-align: center;
-  padding: 40px 30px;
+  padding: 30px 2px;
   margin: 5px auto;
   background-color: white;
-   -webkit-border-radius: 20px;
+  -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
@@ -91,11 +91,11 @@ body {
 }
 
 .file_upload {
-   position: relative;
-   overflow: hidden; 
- font-size: 1.8em;
-  height: 2.8em; 
-   /* line-height: 3em; */
+  position: relative;
+  overflow: hidden;
+  font-size: 1.8em;
+  height: 2.8em;
+  /* line-height: 3em; */
   cursor: pointer;
 
 }
@@ -104,13 +104,13 @@ body {
   float: center;
   width: 8em;
   height: 100%;
-    background-color: orange;
+  background-color: orange;
   cursor: pointer;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 10px;
-   background: #f7a673; 
-  box-shadow: 2px 0px 5px rgba(0,0,0,0.5); 
+  background: #f7a673;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 
@@ -119,7 +119,7 @@ body {
   cursor: pointer;
 }
 
-.addimg:hover{
+.addimg:hover {
   background-color: #f6861f;
   cursor: pointer;
 }
@@ -130,22 +130,21 @@ body {
   cursor: pointer;
 }
 
+.imgblock {
+  padding-top: 1rem;
+}
+
 @media only screen and (max-width: 500px) {
 
-  /* example */
-  .file_upload>div {
-    /* display: none; */
-  }
 
   .file_upload>div {
     width: 100%;
-    
   }
 
   .img-thumbnail {
-    /* height: 5rem; */
-    border: 2px solid #f6861f;
-    margin: 1px 2px 0 0;
+
+    /* margin: 10px 0 0 0; */
+    padding: 0;
   }
 
   .mycontainer {
@@ -153,7 +152,7 @@ body {
     width: 100rem;
     height: 100rem;
     overflow: hidden;
-    border: 5px solid #FFFFFF;
+    /* border: 5px solid #FFFFFF; */
     background: #FFFFFF;
     /* outline: 1px solid #CCCCCC; */
     margin: 10px;
@@ -171,7 +170,7 @@ body {
   letter-spacing: 10em;
   -ms-transform: scale(20);
   opacity: 0;
- }
+}
 
 
 .fileMulti [type=file] {
@@ -217,9 +216,7 @@ body {
   width: 10rem;
   height: 10rem;
   overflow: hidden;
-  border: 5px solid #FFFFFF;
   background: #FFFFFF;
-  outline: 1px solid #CCCCCC;
   margin: 3px;
 }
 
@@ -227,13 +224,11 @@ body {
   .mycontainer {
 
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     overflow: hidden;
-    border: 5px solid #FFFFFF;
     background: #FFFFFF;
-    outline: 1px solid #CCCCCC;
-    margin: 2px;
+    margin: 1px;
   }
 
 }
