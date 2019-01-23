@@ -1,0 +1,38 @@
+$(document).ready(function () {
+
+   
+    
+    
+
+});
+
+$("#hevePhoto").on('click', function () {
+
+    $.fancybox.open('<div class="message"><h2>Ваше фото!</h2> <div class="divmodwindow">   <a href="template/1.png" data-fancybox="gallery" data-caption="Caption #1">        <img src="template/1.png" alt="" /> </a> </div>   <div>  <button>Збільшити</button>    <button>Змінити</button>    <button>Видалити</button>  </div>   </div>');
+
+});
+///////////////////////////////
+
+var o = document.getElementById('box')
+o.onclick = function (readURL) {
+    var img1 = document.createElement('img');
+    img1.src = 'template/1.png';
+    this.appendChild(img1);
+    readURL();
+}
+
+
+function readURL(input, target) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        var image_target = $(target);
+        reader.onload = function (e) {
+            image_target.attr('src', e.target.result).show();
+        };
+        reader.readAsDataURL(input.files[0]);
+     }
+ }
+
+$("#patient_pic").live("change",function(){
+    readURL(this, "#preview_image")
+});
