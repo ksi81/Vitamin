@@ -234,11 +234,14 @@ body {
 }
 
 .modal-content {
-  background: url(../template/img/background.png) no-repeat center top fixed;
-  -webkit-background-size: cover;
+  /* opacity: 0.6; */
+  /* background-color: black; */
+   background: url(../template/img/backgroundq.png) no-repeat center top fixed; */
+  /-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; 
+
 }
 
 .buttons {
