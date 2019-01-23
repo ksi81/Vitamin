@@ -207,7 +207,8 @@ body {
 }
 
 .legal p {
-  line-height: 11px;
+  line-height: 14px;
+  text-align: justify;
 }
 
 
@@ -234,13 +235,13 @@ body {
 }
 
 .modal-content {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   /* background-color: black; */
-   /* background: url(../template/img/backgroundq.png) no-repeat center top fixed; */ */
+   background: url(../template/img/backgroundq.png) no-repeat center top fixed; */
   /-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover; `
 
 }
 
