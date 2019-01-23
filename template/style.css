@@ -234,9 +234,9 @@ body {
 }
 
 .modal-content {
-  /* opacity: 0.6; */
+  opacity: 0.9;
   /* background-color: black; */
-   background: url(../template/img/backgroundq.png) no-repeat center top fixed; */
+   /* background: url(../template/img/backgroundq.png) no-repeat center top fixed; */ */
   /-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
