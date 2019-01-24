@@ -191,8 +191,8 @@ body {
 
 .mycontainer {
   display: inline-block;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   overflow: hidden;
   background: #FFFFFF;
   margin: 3px;
@@ -218,9 +218,8 @@ body {
 .markitem {
   position: relative;
   z-index: 5;
- 
-  top: -154px;
-  left: 59px;
+   top: -223px;
+  left: 89px;
 }
 
 
