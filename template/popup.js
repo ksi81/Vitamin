@@ -1,10 +1,15 @@
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-  
-});
+$(document).ready(function () {
 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+
+  });
+
+
+  $("#flip").click(function () {
+    $("#panel").slideUp("slow");
+    windows.scrollTo(0, 5000);
+
+
   });
 });
