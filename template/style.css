@@ -97,7 +97,7 @@ body {
 }
 
 .file_upload .addimg {
-  float: center;
+  /* float: center;
   width: 8em;
   height: 100%;
   cursor: pointer;
@@ -106,14 +106,32 @@ body {
   border-radius: 10px;
   background: #f7a673;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 10px; */
 }
 
 .addimg p {
   margin-top: 7px;
+   float: center;
+  width: 8em;
+  height: 100%;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f7a673;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px; 
+  color: white;
 }
 
-.addimg:hover {
+.addimg a {
+  width: 50px;
+  height: 50px;
+  background-color: #f6861f;
+  text-decoration: none;
+}
+
+.addimg a :hover {
   background-color: #f6861f;
   cursor: pointer;
 }
@@ -130,7 +148,7 @@ body {
 
 
 .file_upload input[type=file] {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -138,12 +156,12 @@ body {
   transform: scale(20);
   letter-spacing: 10em;
   -ms-transform: scale(20);
-  opacity: 0;
+  opacity: 0; */
 }
 
 
 .fileMulti [type=file] {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -152,7 +170,7 @@ body {
   letter-spacing: 10em;
   -ms-transform: scale(20);
   opacity: 0;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .singleinput {
