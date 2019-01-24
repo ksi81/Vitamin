@@ -277,6 +277,7 @@ body {
  #panel {
   /* padding: 50px; */
   display: none;
+  padding-left: inherit;
 } 
 
 @media (max-width: 575.98px) {
