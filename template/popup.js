@@ -5,12 +5,13 @@ $('#myModal').on('shown.bs.modal', function () {
 
 $(document).ready(function(){
   $("#flip").click(function(){
-    $("#panel").toggle("slow");
     
-    
+    $("#panel").toggle("slow", function(){
+          window.scrollTo(500, 2000);
+    });
   });
+   
+ 
 });
 
-function scrollWin() {
-  window.scrollTo(0, 25000);
-}
+
