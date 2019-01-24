@@ -59,7 +59,7 @@ function handleFileSelectMulti(evt) {
 	for (var i = 0, f; f = files[i]; i++) {
 		// Only process image files.
 		if (!f.type.match('image.*')) {
-			alert("Только изображения....");
+			alert("Можна додавати тільки зображення!");
 		}
 		var reader = new FileReader();
 		// Closure to capture the file information.
@@ -67,7 +67,7 @@ function handleFileSelectMulti(evt) {
 			return function (e) {
 				// Render thumbnail.
 				var span = document.createElement('div');
-				span.innerHTML = ['<div class="mycontainer" data-toggle="modal" data-target="#myModal"><img  id="myImg" class="img-thumbnail image"  src="', e.target.result, '" title="', escape(theFile.name), '"/><span style="color: red;"> <i class=" markitem fas fa-frown fa-3x"></i></span></div></div>'].join('');
+				span.innerHTML = ['<div class="mycontainer" data-toggle="modal" data-target="#myModal"><img  id="myImg" class="img-thumbnail image"  src="', e.target.result, '" title="', escape(theFile.name), '"/><span style="color: orange;"> <i class=" markitem fas fa-clock fa-2x"></i></span> </div></div>'].join('');
 				document.getElementById('outputMulti').insertBefore(span, parentSpan.firstChild);
 			};
 		})(f);
@@ -77,6 +77,7 @@ function handleFileSelectMulti(evt) {
 }
 document.getElementById('fileMulti').addEventListener('change', handleFileSelectMulti, false);
 
-// <span style="color: orange;"> <i class=" markitem fas fa-smile fa-3x"></i></span>
+// <span style="color: green;"> <i class=" markitem fas fa-smile fa-2x"></i></span>
 
-//<span style="color: red;"> <i class=" markitem fas fa-frown fa-3x"></i></span> 
+//<span style="color: red;"> <i class=" markitem fas fa-frown fa-2x"></i></span> 
+// <span style="color: orange;"> <i class=" markitem fas fa-clock fa-2x"></i></span> 
