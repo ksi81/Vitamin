@@ -16,7 +16,6 @@ body {
   /* object-position: 0 0; */
   padding: 0;
   z-index: 1;
-
 }
 
 .myheader {
@@ -47,7 +46,6 @@ body {
 .gallery img {
   width: 50px;
   height: 50px;
-
 }
 
 .logoimg {
@@ -81,7 +79,6 @@ body {
   -moz-border-radius: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 /* add button and  input hide */
@@ -96,19 +93,16 @@ body {
   overflow: hidden;
   font-size: 1.8em;
   height: 2.8em;
-  /* line-height: 3em; */
   cursor: pointer;
-
 }
 
 .file_upload .addimg {
   float: center;
   width: 8em;
   height: 100%;
-  background-color: orange;
   cursor: pointer;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   background: #f7a673;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
@@ -117,7 +111,6 @@ body {
 
 .addimg p {
   margin-top: 7px;
-  cursor: pointer;
 }
 
 .addimg:hover {
@@ -134,7 +127,6 @@ body {
 .imgblock {
   padding-top: 1rem;
 }
-
 
 
 .file_upload input[type=file] {
@@ -158,9 +150,7 @@ body {
   height: 100%;
   transform: scale(20);
   letter-spacing: 10em;
-  /* IE 9 fix */
   -ms-transform: scale(20);
-  /* IE 9 fix */
   opacity: 0;
   cursor: pointer;
 }
@@ -199,7 +189,7 @@ body {
   position: relative;
 }
 
-.modal-mycontainer{
+.modal-mycontainer {
   display: inline-block;
   width: 28rem;
   height: 30rem;
@@ -209,22 +199,20 @@ body {
   position: relative;
 }
 
-.modal{
+.modal {
   width: 100%;
   height: 100vh;
 }
 
-
 .markitem {
   position: relative;
   z-index: 5;
-   top: -223px;
+  top: -223px;
   left: 89px;
 }
 
 
 .modal-content {
-
   background-color: white;
   /* background: url(../template/img/background.png) no-repeat center;  */
   -webkit-background-size: cover;
@@ -232,20 +220,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   opacity: 0.9;
-}
-
-.modal-header {
-  /* background: url(../template/img/background.png) no-repeat center; */
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-}
-
-.buttons {
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2em;
 }
 
 
@@ -263,23 +237,23 @@ body {
   text-align: center;
 }
 
-
-
 .modalbutton {
   width: 15rem;
   height: 3rem;
   font-size: 1.5rem;
 }
-.statusdiv{
-margin-top: 15px;
-margin-bottom: -15px;
+
+.statusdiv {
+  margin-top: 15px;
+  margin-bottom: -15px;
 }
 
 
 @media (max-width: 575.98px) {
   h2 {
-    font-size: 1,5em;
-}
+    font-size: 1, 5em;
+  }
+
   .mycontainer {
 
     display: inline-block;
@@ -294,12 +268,11 @@ margin-bottom: -15px;
   .markitem {
     position: relative;
     z-index: 5;
-  
     top: -90px;
     left: 30px;
   }
 
-  .modal-mycontainer{
+  .modal-mycontainer {
     display: inline-block;
     width: 100%;
     height: 26rem;
