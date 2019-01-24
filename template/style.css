@@ -199,6 +199,16 @@ body {
   position: relative;
 }
 
+.modal-mycontainer{
+  display: inline-block;
+  width: 28rem;
+  height: 30rem;
+  overflow: hidden;
+  background: #FFFFFF;
+  margin: 1px;
+  position: relative;
+}
+
 
 
 .markitem {
@@ -279,8 +289,18 @@ margin-bottom: -15px;
     position: relative;
     z-index: 5;
     opacity: 0.6;
-    top: -95px;
-    left: 31px;
+    top: -90px;
+    left: 30px;
+  }
+
+  .modal-mycontainer{
+    display: inline-block;
+    width: 21rem;
+    height: 26rem;
+    overflow: hidden;
+    background: #FFFFFF;
+    margin: 0px;
+    position: relative;
   }
 
 }

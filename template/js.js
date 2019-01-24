@@ -67,7 +67,7 @@ function handleFileSelectMulti(evt) {
 			return function (e) {
 				// Render thumbnail.
 				var span = document.createElement('div');
-				span.innerHTML = ['<div class="mycontainer" data-toggle="modal" data-target="#myModal"><img  id="myImg" class="img-thumbnail image"  src="', e.target.result, '" title="', escape(theFile.name), '"/><span style="color: orange;"> <i class=" markitem fas fa-clock fa-2x"></i></span> </div></div>'].join('');
+				span.innerHTML = ['<div class="mycontainer" data-toggle="modal" data-target="#myModal"><img  id="myImg" class="img-thumbnail image"  src="', e.target.result, '" title="', escape(theFile.name), '"/><span style="color: orange;"> <i class=" markitem fas fa-hourglass-half fa-2x"></i></span> </div></div>'].join('');
 				document.getElementById('outputMulti').insertBefore(span, parentSpan.firstChild);
 			};
 		})(f);
@@ -80,4 +80,4 @@ document.getElementById('fileMulti').addEventListener('change', handleFileSelect
 // <span style="color: green;"> <i class=" markitem fas fa-smile fa-2x"></i></span>
 
 //<span style="color: red;"> <i class=" markitem fas fa-frown fa-2x"></i></span> 
-// <span style="color: orange;"> <i class=" markitem fas fa-clock fa-2x"></i></span> 
+// <span style="color: orange;"> <i class=" markitem fas fa-hourglass-half fa-2x"></i></span> 
