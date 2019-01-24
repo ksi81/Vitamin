@@ -247,13 +247,21 @@ opacity: 0.6;
 
 .modal-content {
   
-  /* background-color: white; */
-   background: url(../template/img/background.png) no-repeat center; 
-  /-webkit-background-size: cover;
+  background-color: white;
+   /* background: url(../template/img/background.png) no-repeat center;  */
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
   opacity: 0.9;
+}
+
+.modal-header{
+ background: url(../template/img/background.png) no-repeat center; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover; 
 }
 
 .buttons {
