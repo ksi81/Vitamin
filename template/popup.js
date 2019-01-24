@@ -6,7 +6,7 @@ $('#myModal').on('shown.bs.modal', function () {
 $(document).ready(function(){
   $("#flip").click(function(){
     
-    $("#panel").toggle("slow", function(){
+    $("#panel").toggle("fast", function(){
           window.scrollTo(500, 2000);
     });
   });
