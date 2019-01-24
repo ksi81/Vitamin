@@ -15,6 +15,7 @@ body {
   object-fit: cover;
   /* object-position: 0 0; */
   padding: 0;
+  z-index:1;
 
 }
 
@@ -234,15 +235,25 @@ body {
 
 }
 
+.markitem {
+position: relative;
+z-index: 5;
+opacity: 0.6;
+    top: -20;
+    top: -158px;
+    left: 47px;
+}
+
+
 .modal-content {
-  /* opacity: 0.9; */
-  /* background-color: black; */
-   background: url(../template/img/backgroundq.png) no-repeat center top fixed; */
+  
+  /* background-color: white; */
+   background: url(../template/img/background.png) no-repeat center; 
   /-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; `
-
+  background-size: cover; 
+  opacity: 0.9;
 }
 
 .buttons {
@@ -253,14 +264,17 @@ body {
 
 
 .statusimg {
-  background-color: white;
+  background-color: #f6861f;
   font-size: 2rem;
   text-align: center;
+  border-radius: unset;
+  display: inline-grid;
 }
 
 .statusimg h3 {
   font-size: 2rem;
   padding-top: 0.8rem;
+  text-align: center;
 }
 
 
