@@ -118,7 +118,7 @@ body {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  background: #f7a673;
+  background: #f6861f;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   padding: 10px; 
   color: white;
@@ -132,7 +132,7 @@ body {
 }
 
 .addimg a :hover {
-  background-color: #f6861f;
+    background-color: #f7a673;
   cursor: pointer;
 }
 
@@ -266,16 +266,7 @@ body {
   margin-bottom: -15px;
 }
 
-
-/* #panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
- } */
-
  #panel {
-  /* padding: 50px; */
   display: none;
   padding-left: inherit;
 } 
