@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link rel="stylesheet" href="template/style.css">
-
-    <title>Марафон класів «Вітамінний клас»</title>
+    <link rel="stylesheet" href="template/table.css">
+    <title>Марафон класів «Вітамінний клас»- результати БГ</title>
 </head>
 
 <body>
     <div class="myheader">
-        <div class=" headerblock">
-            <img class="logoimg" src="template/img/logo.png" alt="MARY KAY LOGO">
+        <div class=" headerblock"></div> <img class="logoimg" src="template/img/logo.png" alt="MARY KAY LOGO">
         </div>
         <div class="headermainphoto">
             <img src="template/img/header.png" alt="Логотип Виклику">
         </div>
     </div>
-
     <div class=" mainblock ">
         <div>
             <img class="orangewave" src="template/img/wave.png" alt=""></div>
@@ -32,134 +30,106 @@
                     <div class="whiteblock">
                         <div class="container">
                             <h5>[Name], </h5>
-                                <p>  тут ви можете відстежувати участь Консультантів вашої Бізнес-Групи у марафоні</p>
-                           
-
+                            <p> тут ви можете відстежувати участь Консультантів вашої Бізнес-Групи у марафоні</p>
                             <div class="row justify-content-center">
-                                <div class=".col-md-4 .offset-md-4 inputbox">
-<table>
-    <tr>
-        <td>wfwfwf</td>
-    </tr>
-</table>
+                                <div class=".col ">
+                                    <table id="list" class="resultsTable dataTable">
+                                        <thead>
+                                            <tr text-align="center" role="row">
+                                                <th rowspan="2" class="sorting" role="columnheader" tabindex="0"
+                                                    aria-controls="list" colspan="1" aria-label="ПІ: activate to sort column ascending">№</th>
+                                                <th rowspan="2" class="sorting" role="columnheader" tabindex="0"
+                                                    aria-controls="list" colspan="1" aria-label="Конс. №: activate to sort column ascending">ПІБ</th>
+                                                <th rowspan="2" class="sorting" role="columnheader" tabindex="0"
+                                                    aria-controls="list" colspan="1" aria-label="ПІ ГО: activate to sort column ascending">Кількість</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th rowspan="1" colspan="1">Всього</th>
+                                                <th rowspan="1" colspan="1"></th>
+                                                <th rowspan="1" colspan="1">31</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                            <tr class="odd">
+                                                <td class="">1</td>
+                                                <td class=" ">Болячевец Светлана</td>
+                                                <td class=" ">15</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td class="">2</td>
+                                                <td class=" ">Болячевец Болячевец Светлана</td>
+                                                <td class=" ">10</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td class="">3</td>
+                                                <td class=" ">Болячевец Светлана</td>
+                                                <td class=" ">5</td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td class="">4</td>
+                                                <td class=" ">Болячевец Светлана</td>
+                                                <td class=" ">1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                </table>
 
 
-                                    <div class="file_upload">
-                                        <!-- <div class="addimg">
-                                            <a href="#" onclick="document.getElementById('fileMulti').click(); return false;" />
-                                            <p> Додати фото</p></a>
-                                            <input type="file" id="fileMulti" class="fileMulti" name="fileMulti[]"
-                                                multiple style="visibility: hidden;" />
-                                       
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="row singleinput">
-                                    <div class="col">
-                                        <label>Single:</label>
-                                        <input type="file" id="file" name="file" />
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col" id="output"></div>
-                                </div>
+
                             </div>
-                            <div class="row">
-                                <!-- <label>Multi:</label>
-                        <input type="file" id="fileMulti" class="fileMulti" name="fileMulti[]" multiple /> -->
-                            </div>
-                            <!-- <div class="row justify-content-center imgblock">
-                                <div class="col" id="outputMulti">
-                                </div>
-                            </div> -->
 
-                            
 
-                                <!-- <div class="row justify-content-center">
-                                    <div class=".col-md-4 .offset-md-4 inputbox">
-                                        <div class="file_upload">
-                                            <div class="addimg">
-                                                <a href="#">
-                                                <p>Бізнес-Група</p></a>
-                                                                                              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                </div>
-                                <!-- /// -->
-                                <!-- The Modal -->
-                                <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                                    aria-hidden="true" backdrop="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <!-- <div class="modal-header"> -->
-                                            <!-- <h4 class="modal-title" id="myModalLabel">Редагування фото</h4> -->
-                                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-                                            <!-- <span aria-hidden="true">&times;</span> -->
-                                            <!-- </button> -->
-                                            <!-- </div> -->
-                                            <!-- <div class="statusimg"> -->
-                                            <!-- <div class="row justify-content-md-center"> -->
-                                            <!-- <div class="col-2">img src="template/img/orange_OK.jpg" alt="Статус фото">
-                                            </div> -->
-                                            <!-- </div> -->
-                                            <!-- </div> -->
-                                            <div class="modal-body">
-                                                <div class="modal-mycontainer">
-                                                    <img class="img-thumbnail" src="template/img/test.jpg" alt="">
-                                                </div>
-                                                <div class="col d-flex justify-content-center statusdiv">
-                                                    <span style="color: green;"> <i class="  fas fa-smile fa-2x"></i></span>
-                                                    <h3 class="d-flex justify-content-center">&nbsp;Фото прийняте</h3>
-                                                </div>
-                                                <!-- <div class="buttons">
-                                               <button type="button" class="btn btn-warning modalbutton">ВИДАЛИТИ</button>
-                                            <button type="button" class="btn btn-warning modalbutton">ЗАКРИТИ</button><br>
-
-                                            </div> -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-warning modalbutton">ВИДАЛИТИ</button>
-                                                <button type="button" class="btn btn-warning modalbutton" data-dismiss="modal">ЗАКРИТИ</button><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- // -->
-                            </div>
                         </div>
-                        <hr>
-                        <div class="container legal " id="flip" onclick="scrollWin()">
-                            <p>
-                                *Завантажуючи фото Консультант дає ТОВ «Мері Кей (Україна)
-                                Лтд.» (далі - Компанія) згоду на
-                                його використання шляхом, включаючи, але не обмежуючись, <span class="container legal "
-                                    id="panel"> переробки, адаптації фото,
-                                    розміщення фото в
-                                    друкованих, Інтернет-виданнях компанії, сторінках компанії у соціальних мережах,
-                                    презентаціях
-                                    та
-                                    використання в інших рекламно-інформаційних матеріалах, на території України
-                                    протягом
-                                    всього строку охорони прав інтелектуальної власності на таке фото, а також
-                                    підтверджує та
-                                    гарантує, що він
-                                    отримав необхідні згоди та дозволи від усіх третіх осіб, в тому числі зображених на
-                                    фото, на
-                                    його передачу
-                                    компанії для використання способами зазначеними вище, та у випадку виникнення
-                                    будь-яких
-                                    претензій чи
-                                    позовів третіх осіб самостійно та за свій рахунок зобов’язується їх врегулювати.</span></p>
 
+                        <div class="row justify-content-center">
+                            <div class=".col-md-4 .offset-md-4 inputbox">
+                                <div class="file_upload">
+                                    <div class="addimg">
+                                        <a href="index.html">
+                                            <p>На головну </p>
+                                        </a>
 
-
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <hr>
+                <div class="container legal " id="flip" onclick="scrollWin()">
+                    <p>
+                        *Завантажуючи фото Консультант дає ТОВ «Мері Кей (Україна)
+                        Лтд.» (далі - Компанія) згоду на
+                        його використання шляхом, включаючи, але не обмежуючись, <span class="container legal " id="panel">
+                            переробки, адаптації фото,
+                            розміщення фото в
+                            друкованих, Інтернет-виданнях компанії, сторінках компанії у соціальних мережах,
+                            презентаціях
+                            та
+                            використання в інших рекламно-інформаційних матеріалах, на території України
+                            протягом
+                            всього строку охорони прав інтелектуальної власності на таке фото, а також
+                            підтверджує та
+                            гарантує, що він
+                            отримав необхідні згоди та дозволи від усіх третіх осіб, в тому числі зображених на
+                            фото, на
+                            його передачу
+                            компанії для використання способами зазначеними вище, та у випадку виникнення
+                            будь-яких
+                            претензій чи
+                            позовів третіх осіб самостійно та за свій рахунок зобов’язується їх врегулювати.</span></p>
+
+
 
                 </div>
+            </div>
+
+        </div>
 </body>
 
 </html>
